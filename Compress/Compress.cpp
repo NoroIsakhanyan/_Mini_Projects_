@@ -5,8 +5,6 @@ Compress::Compress(const std::string& inputString)
 : m_inputString(inputString)
 {}
 
-Compress::~Compress() = default;
-
 void Compress::compress(const std::string& fileName){
     
     m_file.open(fileName);
@@ -45,3 +43,5 @@ void Compress::decompress(const std::string& fileName){
     m_file.close();
 
 }
+
+Compress::~Compress() = default;
