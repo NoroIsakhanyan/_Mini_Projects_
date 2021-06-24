@@ -1,14 +1,13 @@
 #include <iostream>
 #include "Compress.h"
 
-Compose::Compose(const std::string& inputString)
+Compress::Compress(const std::string& inputString)
 : m_inputString(inputString)
 {}
 
-//Compose::Compose() = default;
-Compose::~Compose() = default;
+Compress::~Compress() = default;
 
-void Compose::compose(const std::string& fileName){
+void Compress::compress(const std::string& fileName){
     
     m_file.open(fileName);
 
@@ -23,7 +22,7 @@ void Compose::compose(const std::string& fileName){
 }
 
 
-void Compose::decompose(const std::string& fileName){
+void Compress::decompress(const std::string& fileName){
     
     m_file.open(fileName);
     std::string deCashedString;
