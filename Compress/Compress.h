@@ -5,14 +5,14 @@
 #include <fstream>
 #include <string>
 
-class Compose {
+class Compress {
 public:
-    Compose() = default;
-    Compose(const std::string&);
-    ~Compose();
+    Compress() = default;
+    Compress(const std::string&);
+    ~Compress();
 
-    void decompose(const std::string&);
-    void compose(const std::string&);
+    void decompress(const std::string&);
+    void compress(const std::string&);
 private:
     std::string m_inputString;
     std::fstream m_file;
